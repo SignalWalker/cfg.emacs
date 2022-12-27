@@ -1,3 +1,8 @@
 /eln-cache
 /result
 /result-*
+/elpa
+/init.el~
+/auto-save-list
+/#init.el#
+/transient
