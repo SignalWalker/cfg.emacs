@@ -28,7 +28,8 @@ in {
     }
     (lib.mkIf (config ? signal.dev.editor.editors) {
       signal.dev.editor.editors."emacs" = {
-        cmd.term = "emacs";
+        cmd.term = "emacs -nw";
+        cmd.gui = "emacs";
       };
     })
     (lib.mkIf emacs.settings.enable {
